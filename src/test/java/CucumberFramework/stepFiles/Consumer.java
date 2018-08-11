@@ -30,8 +30,8 @@ public class Consumer {
 		prefs.put("profile.default_content_setting_values.notifications", 1);
 		//1-Allow, 2-Block, 0-default
 		options.setExperimentalOption("prefs",prefs);
-		String path = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver",path+"/chromedriver.exe");		
+		//String path = System.getProperty("user.dir");
+		//System.setProperty("webdriver.chrome.driver",path+"/chromedriver.exe");		
 		//ChromeOptions options = new ChromeOptions();
 		//options.addArguments("--enable-notifications");
 		this.driver = new ChromeDriver(options);
